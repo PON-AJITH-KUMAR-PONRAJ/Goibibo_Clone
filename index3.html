@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goibibo Flight Booking</title>
+    
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .orange-bg {
+            background-color: #f46a06;
+            color: white;
+        }
+        .promo-header {
+            background: linear-gradient(to right, #d4af37, #ffcc00);
+            color: white;
+            padding: 10px;
+            border-radius: 5px 5px 0 0;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-white p-3 flex font-bold justify-between items-center">
+        <div class="text-3xl font-bold text-blue-500"><a href="index.html"><span class="text-orange-500">go</span>ibibo</a></div>
+        <div class="flex space-x-12 text-black">
+            <span>Flights</span>
+            <span>Hotels</span>
+            <span>Trains</span>
+            <span>Cabs</span>
+            <span>Bus</span>
+            <span>Holidays</span>
+            <span>Forex</span>
+        </div>
+        <button class="bg-white border border-blue-500 text-blue-500 px-3 py-1 rounded-lg flex items-center space-x-2">
+            <img src="https://www.svgrepo.com/show/493990/account-management.svg" height="20" width="20" alt="">
+            <span>LOGIN / SIGNUP</span>
+        </button>
+            </nav>
+    
+        
+
+    <!-- Booking Section -->
+    <div class="orange-bg py-3 px-4">
+        <h5 class="fw-bold px-3 text-[18px]">Complete your booking</h5>
+    </div>
+
+    <div class="container my-4">
+        <div class="row g-3">
+            
+            <!-- Left Section -->
+            <div class="col-md-8">
+                <div class="bg-white shadow-md p-4 rounded">
+
+
+                    <div class="card shadow-sm m-3 p-3">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <h5 class="fw-bold">Chennai -> Mumbai</h5>
+                                <span class="badge bg-warning text-dark fw-bold">Sunday, Mar 16</span>
+                                <span class="text-sm ms-2">Non Stop • 2h 5m</span>
+                            </div>
+                            <div>
+                                <span class="badge bg-success">CANCELLATION FEES APPLY</span>
+                                <a href="#" class="d-block text-primary text-decoration-none">View Fare Rules</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center mb-2">
+                        <img src="images/ai.png" width="30" alt="Air India" class="me-2">
+                        <span class="fw-bold">Air India</span>
+                        <span class="ms-3 text-muted text-sm">AI 640</span>
+                    </div>
+                    
+                    <div class="d-flex justify-content-between align-items-start p-4">
+                        <div>
+                            <h6 class="mb-1 fw-bold">19:50</h6>
+                            <p class="mb-0 text-muted small">Chennai International Airport</p>
+                            <p class="mb-0 text-muted small">Terminal T4</p>
+                        </div>
+                        <div class="text-center">
+                            <span class="badge bg-secondary px-3 py-1">Non-Stop</span>
+                            <p class="text-muted small mt-1">2h 5m</p>
+                        </div>
+                        <div class="text-end">
+                            <h6 class="mb-1 fw-bold">21:55</h6>
+                            <p class="mb-0 text-muted small">Mumbai, Chhatrapati Shivaji Int'l Airport</p>
+                            <p class="mb-0 text-muted small">Terminal T2</p>
+                        </div>
+                    </div>
+                    
+                    <hr>
+
+                    <div class="container">
+                        <div class="row p-4">
+                            <div class="col-md-6 d-flex align-items-center">
+                                <img src="https://img.icons8.com/?size=100&id=9cjwSHOnupg4&format=png&color=000000" alt="" height="20" width="20" class="me-2">
+                                <p class="mb-0 text-[12px]"><strong>Cabin Baggage:</strong> 7 Kgs(1 piece only)/Adult</p>
+                            </div>
+                            <div class="col-md-6 d-flex align-items-center">
+                                <img src="https://img.icons8.com/?size=100&id=9cjwSHOnupg4&format=png&color=000000" alt="" height="20" width="20" class="me-2">
+                                <p class="mb-0 text-[12px]"><strong>Check-In Baggage:</strong> 15 Kgs/Adult</p>
+                            </div>
+                        </div>
+                    </div>
+                                        
+                    <div class="bg-green-100 p-2 rounded flex justify-between text-xs font-bold">
+                        <span>Got excess baggage? Buy extra check-in baggage at fab rates!</span>
+                        <a href="#" class="text-blue-600 font-bold text-[12px]">+ ADD BAGGAGE</a>
+                    </div>
+                </div>
+
+                <!-- Cancellation & Date Change Policy -->
+                <div class="bg-white shadow-md p-4 mt-3 rounded">
+                    <h5 class="fw-bold">Cancellation & Date Change Policy</h5>
+                    <div class="d-flex justify-content-between align-items-center p-2">
+                        <div class="d-flex align-items-center p-2">
+                            <img src="images/ai.png" width="30" alt="Flight Icon">
+                            <span class="ms-2 fw-bold">MAA-BOM</span>
+                        </div>
+                        <a href="#" class="text-blue-600">View Policy</a>
+                    </div>
+                    
+                    <p class="mt-2"><strong>Cancellation Penalty:</strong></p>
+                    <div class="d-flex justify-content-between">
+                        <span class="text-success fw-bold">₹ 4,500</span>
+                        <span class="text-danger fw-bold">₹ 13,074</span>
+                    </div>
+                    <div class="progress mt-2" style="height: 5px;">
+                        <div class="progress-bar bg-success" style="width: 30%;"></div>
+                        <div class="progress-bar bg-warning" style="width: 40%;"></div>
+                        <div class="progress-bar bg-danger" style="width: 30%;"></div>
+                    </div>
+                    <pre> Now                       16 Mar 17:50                 16 Mar 19:50 </pre>
+                </div>
+
+
+                    <!-- Free Date Change Option -->
+                    <div class="bg-white shadow-md p-4 mt-3 rounded">
+                        <h5 class="font-bold inline text-[20px]">Unsure of your Travel Plans?</h5> 
+                        <p class="text-gray-500 inline ml-2 text-[15px]">Select a service to add flexibility to your trip</p>
+                        <br><br>
+                            
+                        <div class="p-3 rounded">
+                            <div>
+                                <h6 class="fw-bold mb-1">Free Date Change</h6>
+                                <p class="fw-bold mb-2">
+                                    <span class="text-success">Save up to ₹3450</span> 
+                                    <span class="text-gray-500">in penalties</span>
+                                </p>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center border rounded p-2">
+                                <span><strong>Change Date until 2 hrs</strong> before departure</span>
+                                <div class="d-flex align-items-center">
+                                    <a href="#" class="text-primary me-3">View T&C</a>
+                                    <div class="d-flex flex-column align-items-center">
+                                        <input type="radio" name="date_change" class="mb-1">
+                                        <span class="fw-bold text-center">₹ 99</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+
+                <!-- Important Information -->
+                <div class="bg-white shadow-md p-4 mt-3 rounded">
+                    <h5 class="fw-bold p-2">Important Information</h5>
+
+                    <p class="d-flex align-items-center p-1 text-[13px]">
+                        <img src="images/info.png" alt="" height="15" width="15" class="me-2">
+                        <strong>Check travel guidelines and baggage information below:</strong>
+                    </p>
+                    <ul class=" text-[13px]">
+                        <li>Carry no more than 1 check-in baggage and 1 hand baggage per passenger.</li>
+                    </ul>
+                    <br>
+                    <p class="d-flex align-items-center p-1 text-[13px]">
+                        <img src="images/info.png" alt="" height="15" width="15" class="me-2">
+                        <strong>Unaccompanied Minors Travelling:</strong>
+                    </p>
+
+                    <ul class=" text-[13px]">
+                        <li>An unaccompanied minor usually refers to a child traveling without an adult aged 18 or older.</li>
+                        <li>Please check with the airline for their rules and regulations regarding unaccompanied minors.</li>
+                    </ul>
+                </div>
+
+                <!-- Trip Secure Section -->
+                <div class="bg-white shadow-md p-4 mt-3 rounded">
+                    <div class="d-flex align-items-center">
+                        <img src="images/secure.png" alt="" height="25" width="25" class="me-2">
+                        <strong class="text-lg">Trip Secure</strong>
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-center mt-2">
+                        <h6 class="fw-bold">₹ 249/Traveller <small>(18% GST included)</small></h6>
+                        <span class="badge bg-warning text-black">GO SPECIAL</span>
+                        <span class="badge bg-warning text-black">TRIP SECURE INCLUDED</span>
+                    </div>
+                    
+                    <div class="d-flex justify-content-between text-[11px] mt-3">
+                        <div class="border p-2 rounded-lg">
+                            <p class="text-success fw-bold">24x7 Support</p>
+                            <p class="font-bold">Delayed/lost baggage Assistance</p>
+                        </div>
+                        <div class="border p-2 rounded-lg">
+                            <p class="text-primary fw-bold">Up to ₹ 3000</p>
+                            <p class="font-bold">Missed Flight</p>
+                        </div>
+                        <div class="border p-2 rounded-lg">
+                            <p class="text-danger fw-bold">Up to ₹ 3000</p>
+                            <p class="font-bold">Trip Cancellation</p>
+                        </div>
+                        <div>
+                            <a href="#" class="text-blue-600 fw-bold">View All Benefits →</a>
+                        </div>
+
+                    </div>
+
+                    <div class="bg-light p-2 mt-3 rounded">
+                        <p class="text-muted">Recommended for your travel within India.</p>
+                    </div>
+
+                    <div class="bg-green-100 text-white p-2 mt-3 rounded">
+                        <p class="fw-bold text-gray-500 text-[13px]">✅ Great! Trip Secure added for 1 person(s)</p>
+                    </div>
+                </div>
+
+
+                <!-- Pincode Section -->
+                <div class="bg-white shadow-md p-4 mt-3 rounded">
+                    <h5 class="fw-bold">YOUR PINCODE AND STATE</h5>
+                    <p class="text-[11px] font-bold text-gray-500">(Required for GST purpose on your tax invoice. You can edit this anytime later in your profile section. )</p><br>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" placeholder="Enter Pincode">
+                        </div>
+                        <div class="col-md-6">
+                            <select class="form-select">
+                                <option selected>Tamil Nadu</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button class="btn orange-bg mt-3 px-4 py-2 fw-bold">CONTINUE</button>
+                </div>
+
+            </div>
+
+            <!-- Right Section -->
+            <div class="col-md-4">
+                <div class="sticky-top" style="top: 10px;">
+                    <!-- Fare Summary -->
+                    <div class="bg-white shadow-md p-4 rounded">
+                        <h5 class="fw-bold text-lg">Fare Summary</h5>
+                        <hr class="my-2">
+
+                        <div class="space-y-3">
+                            <div class="d-flex justify-content-between">
+                                <span class="font-bold">➕ Base Fare</span>
+                                <span>₹ 11,850</span>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <span class="fw-bold">➕ Taxes and Surcharges</span>
+                                <span>₹ 1,474</span>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <span class="fw-bold">➕ Other Services</span>
+                                <span>₹ 249</span>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <span class="fw-bold">➕ Discounts</span>
+                                <span class="text-success">- ₹ 250</span>
+                            </div>
+                        </div>
+
+                        <hr class="my-3">
+                        
+                        <div class="d-flex justify-content-between fw-bold text-lg">
+                            <span>Total Amount</span>
+                            <span>₹ 13,323</span>
+                        </div>
+                    </div>
+
+                    <!-- Promo Codes Section -->
+                    <div class="bg-white shadow-md p-3 mt-3 rounded">
+                        <div class="promo-header d-flex align-items-center justify-content-between">
+                            <span>PROMO CODES</span>
+                            <img src="https://cdn-icons-png.flaticon.com/512/992/992700.png" width="30">
+                        </div>
+
+                        <div class="p-3">
+                            <input type="text" class="form-control mb-3" placeholder="Enter promo code here">
+                            <div class="bg-gray-100 p-3 mb-2 rounded">
+                                <input type="radio" name="promo"> <strong>GOAXISFEST</strong> 
+                                <p class="mb-1">Get ₹ 1,332 Instant Discount with Axis Credit Cards</p>
+                            </div>
+                        </div>
+
+                        <div class="p-3">
+                            <div class="bg-gray-100 p-3 mb-2 rounded">
+                                <input type="radio" name="promo"> <strong>GOAXISFEST</strong> 
+                                <p class="mb-1">Get ₹ 1,332 Instant Discount with Axis Credit Cards</p>
+                            </div>
+                        </div>
+
+                        <div class="p-3">
+                            <div class="bg-gray-100 p-3 mb-2 rounded">
+                                <input type="radio" name="promo"> <strong>GOAXISFEST</strong> 
+                                <p class="mb-1">Get ₹ 1,332 Instant Discount with Axis Credit Cards</p>
+                            </div>
+                        </div>
+
+                        <div class="p-3">
+                            <div class="bg-gray-100 p-3 mb-2 rounded">
+                                <input type="radio" name="promo"> <strong>GOAXISFEST</strong> 
+                                <p class="mb-1">Get ₹ 1,332 Instant Discount with Axis Credit Cards</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div> 
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

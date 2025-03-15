@@ -89,7 +89,173 @@
             </div>
         </div>
         
-        <button class="bg-orange-500 text-white px-6 py-3 rounded-lg mt-6 block mx-auto">SEARCH FLIGHTS</button>
+        <button class="bg-orange-500 text-white px-6 py-3 rounded-lg mt-6 block mx-auto"><a href="index2.html">SEARCH FLIGHTS</a></button>
     </div>
+
+<!-- Offers Section -->
+<div class="bg-white mx-auto mt-4 p-6 rounded-lg shadow-lg w-5/6">
+    <div class="max-w-7xl mx-auto px-4 py-12">
+        <h2 class="text-2xl font-bold mb-6">Offers For You</h2>
+        
+        <!-- Offer Filters -->
+        <div class="flex space-x-4 mb-8 overflow-x-auto">
+            <button class="px-4 py-2 bg-blue-50 text-blue-600 rounded-md">All</button>
+            <button class="px-4 py-2 text-gray-600 hover:bg-gray-50 rounded-md">Bank Offers</button>
+            <button class="px-4 py-2 text-gray-600 hover:bg-gray-50 rounded-md">Flights</button>
+            <button class="px-4 py-2 text-gray-600 hover:bg-gray-50 rounded-md">Hotels</button>
+            <button class="px-4 py-2 text-gray-600 hover:bg-gray-50 rounded-md">Cabs</button>
+            <button class="px-4 py-2 text-gray-600 hover:bg-gray-50 rounded-md">Bus</button>
+            <button class="px-4 py-2 text-gray-600 hover:bg-gray-50 rounded-md">Trains</button>
+        </div>
+
+        <!-- Carousel Wrapper -->
+        <div class="relative overflow-hidden">
+            <div class="flex space-x-4 transition-transform duration-500 ease-in-out" id="carousel">
+                <!-- Offer Cards -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden min-w-[300px]">
+                    <img src="images/carosel1.png" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <p class="text-sm text-gray-600">Bus, Hotels, Cabs, Cabs, Flights, Trains</p>
+                        <h3 class="text-sm font-bold mt-2">Get up to 45% OFF* on Travel Bookings!</h3>
+                        <p class="text-sm text-gray-600">Valid till 18th Mar'25</p>
+                </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden min-w-[300px]">
+                    <img src="images/carosel2.png" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <p class="text-sm text-gray-600">Flights</p>
+                        <h3 class="text-sm font-bold mt-2">Special Offer by Virgin Atlantic!</h3>
+                        <p class="text-sm text-gray-600">Valid till 18th Mar'25</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden min-w-[300px]">
+                    <img src="images/carosel3.png" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <p class="text-sm text-gray-600">Flights</p>
+                        <h3 class="text-sm font-bold mt-2">Up to 20% OFF* on Flights</h3>
+                        <p class="text-sm text-gray-600">Valid till 18th Mar'25</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden min-w-[300px]">
+                    <img src="images/carosel4.png" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <p class="text-sm text-gray-600">Flights</p>
+                        <h3 class="text-sm font-bold mt-2">Special Offer by Japan Airlines!</h3>
+                        <p class="text-sm text-gray-600">Valid till 18th Mar'25</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden min-w-[300px]">
+                    <img src="images/carosel5.png" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <p class="text-sm text-gray-600">Flights</p>
+                        <h3 class="text-sm font-bold mt-2">Int'l Flights Starting @ ₹14,799!</h3>
+                        <p class="text-sm text-gray-600">Valid till 18th Mar'25</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation Buttons -->
+<!-- Navigation Buttons -->
+<button onclick="prevSlide()" 
+    class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-3 rounded-full shadow-md opacity-50 hover:opacity-100 transition duration-300 ease-in-out hover:scale-110">
+    &#9664;
+</button>
+
+<button onclick="nextSlide()" 
+    class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-3 rounded-full shadow-md opacity-50 hover:opacity-100 transition duration-300 ease-in-out hover:scale-110">
+    &#9654;
+</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    let index = 0;
+    function nextSlide() {
+        index = Math.min(index + 1, 2);
+        document.getElementById('carousel').style.transform = `translateX(-${index * 320}px)`;
+    }
+    function prevSlide() {
+        index = Math.max(index - 1, 0);
+        document.getElementById('carousel').style.transform = `translateX(-${index * 320}px)`;
+    }
+</script>
+
+<!-- Footer -->
+<footer class="bg-gray-100 py-8">
+    <div class="container mx-auto px-4">
+        <!-- Footer grid for sections -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Top Sectors -->
+            <div>
+                <h3 class="font-bold text-sm mb-4">OUR PRODUCTS</h3>
+                <ul class="space-y-2 text-sm text-gray-600">
+                    <li>Domestic Hotels</li>
+                    <li>International Hotels</li>
+                    <li>Domestic Flights</li>
+                    <li>International Flights</li>
+                    <li>Multi-City Flights</li>
+                    <li>Couple Friendly Hotels</li>
+                    <li>Nearby Getaways</li>
+                    <li>Bus Booking</li>
+                    <li>Cab Booking</li>
+                    <li>Airport Cabs Booking</li>
+                    <li>Outstation Cabs Booking</li>
+                    <li>Train Booking</li>
+                    <li>Go Stay</li>
+                    <li>Gift Cards</li>
+                    <li>Gift</li>
+                    <li>Trip Money</li>
+                    <li>Goibibo Advertising Solutions</li>
+                </ul>
+            </div>
+            <!-- Popular Airlines -->
+            <div>
+                <h3 class="font-bold text-sm mb-4">ABOUT US</h3>
+                <ul class="space-y-2 text-sm text-gray-600">
+                    <li>About Us</li>
+                    <li>Investor Relations</li>
+                    <li>Management</li>
+                    <li>Terms of Services</li>
+                    <li>User Agreement</li>
+                    <li>Privacy</li>
+                    <li>Careers</li>
+                    <li>Youtube Channel</li>
+                    <li>Technology@GoibiboF</li>
+                    <li>Customer Support</li>
+                    <li>Facebook Page</li>
+                    <li>Twitter Handle</li>
+                </ul>
+            </div>
+            <!-- Customer Support -->
+            <div>
+                <h3 class="font-bold text-sm mb-4">TRAVEL ESSENTIALS</h3>
+                <ul class="space-y-2 text-sm text-gray-600">
+                    <li>PNR Status</li>
+                    <li>Offers</li>
+                    <li>Airline Routes</li>
+                    <li>Train Running Status</li>
+                </ul>
+            </div>
+            <!-- About Us -->
+            <div>
+                <h3 class="font-bold text-sm mb-4">MORE LINKS</h3>
+                <ul class="space-y-2 text-sm text-gray-600">
+                    <li>Cheap Flights</li>
+                    <li>Hotels Near Me</li>
+                    <li>My Bookings</li>
+                    <li>Cancellation</li>
+                    <li>My Account</li>
+                    <li>Wallet</li>
+                    <li>Advertise with Us</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <!-- Footer -->
+    <img src="images/footer.png" alt="footer">
+          
 </body>
 </html>
