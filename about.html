@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goibibo Clone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="">
+
+<!-- Navbar (Fixed at the top) -->
+<nav class="bg-white p-3 flex font-bold justify-between items-center fixed top-0 left-0 w-full z-50 shadow-md">
+    <div class="text-3xl font-bold text-blue-500">
+        <a href="index.html"><span class="text-orange-500">go</span>ibibo</a>
+    </div>
+    <div class="flex space-x-12 text-black">
+        <span>Flights</span>
+        <span>Hotels</span>
+        <span>Trains</span>
+        <span>Cabs</span>
+        <span>Bus</span>
+        <span>Holidays</span>
+        <span>Forex</span>
+    </div>
+    <button class="bg-white border border-blue-500 text-blue-500 px-3 py-1 rounded-lg flex items-center space-x-2">
+        <img src="https://www.svgrepo.com/show/493990/account-management.svg" height="20" width="20" alt="">
+        <span>LOGIN / SIGNUP</span>
+    </button>        
+</nav>
+
+<!-- Sidebar (Fixed Left) -->
+<div class="w-64 h-screen bg-white shadow-md p-5 fixed top-16 left-0 overflow-y-auto">
+    <nav class="space-y-4">
+        <a href="about.html" class="block px-4 py-2 text-gray-700 rounded-lg hover:bg-blue-500 hover:text-white">About Us</a>
+        <a href="faq.html" class="block px-4 py-2 text-gray-700 rounded-lg hover:bg-blue-500 hover:text-white">FAQ</a>
+        <a href="terms.html" class="block px-4 py-2 text-gray-700 rounded-lg hover:bg-blue-500 hover:text-white">Terms & Conditions</a>
+    </nav>
+</div>
+
+<!-- Main Content (Avoid Overlap with Sidebar & Navbar) -->
+<div class="pl-72 pt-24 p-10">
+    <div class="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg">
+        <h2 class="text-2xl font-semibold text-gray-900 mb-4">About Goibibo.com</h2>
+        <p class="text-gray-700 leading-relaxed">
+            Goibibo is India's leading online travel booking brand providing a range of choices for hotels, flights, trains, 
+            buses, and cars for travelers. Our core value differentiator is the most trusted user experience, 
+            be it in terms of quickest search and booking, fastest payments, settlement, or refund processes.
+        </p>
+        <a href="mgmt.html" class="mt-4 inline-block text-blue-600 hover:underline font-medium">
+            Click here to know management
+        </a>
+    </div>
+
+    <!-- Award Cards -->
+    <div class="flex flex-wrap justify-center gap-6 mt-6">
+        <!-- Card 1 -->
+        <div class="w-72 bg-white shadow-lg rounded-lg overflow-hidden">
+            <img class="w-full h-40 object-cover" src="images/aws17.jpg" alt="AWS Award">
+            <div class="p-4">
+                <h5 class="text-lg font-semibold text-gray-900">AWS Mobility Award</h5>
+                <p class="text-gray-700 text-sm mt-2">In 2017, Goibibo won the AWS Mobility Award in the "Established" category.</p>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="w-72 bg-white shadow-lg rounded-lg overflow-hidden">
+            <img class="w-full h-40 object-cover" src="images/btb.png" alt="Best Tech Brand">
+            <div class="p-4">
+                <h5 class="text-lg font-semibold text-gray-900">Best Tech Brands 2015</h5>
+                <p class="text-gray-700 text-sm mt-2">Recognized as a "Best Tech Travel Brand" by The Economic Times in 2015.</p>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="w-72 bg-white shadow-lg rounded-lg overflow-hidden">
+            <img class="w-full h-40 object-cover" src="images/web2014.png" alt="Best Website">
+            <div class="p-4">
+                <h5 class="text-lg font-semibold text-gray-900">Best Website of the Year 2014</h5>
+                <p class="text-gray-700 text-sm mt-2">Awarded "Best Website" in the Leisure and Travel category by WOTY.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr class="my-10">
+
+<!-- Footer -->
+<footer class="py-8 m-10">
+    <div class="container mx-auto px-4">
+        <!-- Footer grid for sections -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Top Sectors -->
+            <div>
+                <h3 class="font-bold text-sm mb-4">OUR PRODUCTS</h3>
+                <ul class="space-y-2 text-sm text-gray-600">
+                    <li>Domestic Hotels</li>
+                    <li>International Hotels</li>
+                    <li>Domestic Flights</li>
+                    <li>International Flights</li>
+                    <li>Multi-City Flights</li>
+                    <li>Couple Friendly Hotels</li>
+                    <li>Nearby Getaways</li>
+                    <li>Bus Booking</li>
+                    <li>Cab Booking</li>
+                    <li>Airport Cabs Booking</li>
+                    <li>Outstation Cabs Booking</li>
+                    <li>Train Booking</li>
+                    <li>Go Stay</li>
+                    <li>Gift Cards</li>
+                    <li>Gift</li>
+                    <li>Trip Money</li>
+                    <li>Goibibo Advertising Solutions</li>
+                </ul>
+            </div>
+            <!-- Popular Airlines -->
+            <div>
+                <h3 class="font-bold text-sm mb-4">ABOUT US</h3>
+                <li><a href="about.html">About Us</a></li>
+                <li>Investor Relations</li>
+                <li><a href="mgmt.html">Management</a></li>
+                <li><a href="terms.html">Terms of Services</a></li>
+                <li>User Agreement</li>
+                    <li>Privacy</li>
+                    <li>Careers</li>
+                    <li>Youtube Channel</li>
+                    <li>Technology@GoibiboF</li>
+                    <li>Customer Support</li>
+                    <li>Facebook Page</li>
+                    <li>Twitter Handle</li>
+                </ul>
+            </div>
+            <!-- Customer Support -->
+            <div>
+                <h3 class="font-bold text-sm mb-4">TRAVEL ESSENTIALS</h3>
+                <ul class="space-y-2 text-sm text-gray-600">
+                    <li>PNR Status</li>
+                    <li>Offers</li>
+                    <li>Airline Routes</li>
+                    <li>Train Running Status</li>
+                </ul>
+            </div>
+            <!-- About Us -->
+            <div>
+                <h3 class="font-bold text-sm mb-4">MORE LINKS</h3>
+                <ul class="space-y-2 text-sm text-gray-600">
+                    <li>Cheap Flights</li>
+                    <li>Hotels Near Me</li>
+                    <li>My Bookings</li>
+                    <li>Cancellation</li>
+                    <li>My Account</li>
+                    <li>Wallet</li>
+                    <li>Advertise with Us</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <!-- Footer -->
+    <img src="images/footer.png" alt="footer">
+
+</body>
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goibibo Clone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="">
+
+<!-- Navbar -->
+<nav class="bg-white p-3 flex font-bold justify-between items-center fixed top-0 left-0 w-full z-50 shadow-md">
+    <div class="text-3xl font-bold text-blue-500">
+        <a href="index.html"><span class="text-orange-500">go</span>ibibo</a>
+    </div>
+    <div class="flex space-x-12 text-black">
+        <span>Flights</span>
+        <span>Hotels</span>
+        <span>Trains</span>
+        <span>Cabs</span>
+        <span>Bus</span>
+        <span>Holidays</span>
+        <span>Forex</span>
+    </div>
+    <button class="bg-white border border-blue-500 text-blue-500 px-3 py-1 rounded-lg flex items-center space-x-2">
+        <img src="https://www.svgrepo.com/show/493990/account-management.svg" height="20" width="20" alt="">
+        <span>LOGIN / SIGNUP</span>
+    </button>        
+</nav>
+
+<!-- Sidebar -->
+<div class="w-60 h-screen bg-white shadow-md p-6 fixed top-16 left-0 overflow-y-auto">
+    <nav class="space-y-4">
+        <a href="about.html" class="block px-4 py-2 text-gray-700 rounded-lg hover:bg-blue-500 hover:text-white">About Us</a>
+        <a href="faq.html" class="block px-4 py-2 text-gray-700 rounded-lg hover:bg-blue-500 hover:text-white">FAQ</a>
+        <a href="terms.html" class="block px-4 py-2 text-gray-700 rounded-lg hover:bg-blue-500 hover:text-white">Terms & Conditions</a>
+    </nav>
+</div>
+
+<!-- Main Content -->
+<div class="pl-64 pt-20 p-10">
+    <div class="max-w-5xl mx-auto p-6 bg-gray-100 shadow-lg rounded-lg ">
+        <h2 class="text-3xl font-semibold text-gray-900 mb-6">Frequently Asked Questions</h2>
+
+        <!-- FAQ Accordion -->
+        <div class="space-y-4">
+            <!-- Question 1 -->
+            <div class="border border-gray-300 rounded-lg">
+                <button class="w-full text-left px-4 py-3 bg-white text-gray-800 font-semibold focus:outline-none toggle-btn">
+                    1. How can I book a flight on Goibibo?
+                </button>
+                <div class="p-4 hidden answer bg-white">
+                    You can book flights on Goibibo by entering your departure and arrival locations, selecting travel dates, and choosing from the available flights. You can pay securely using credit/debit cards, net banking, or UPI.
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="border border-gray-300 rounded-lg">
+                <button class="w-full text-left px-4 py-3 bg-white text-gray-800 font-semibold focus:outline-none toggle-btn">
+                    2. How do I cancel my booking?
+                </button>
+                <div class="p-4 hidden answer bg-white">
+                    You can cancel your booking from the ‘Manage Bookings’ section on the website or app. Cancellation charges may apply depending on the airline, hotel, or service provider.
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="border border-gray-300 rounded-lg">
+                <button class="w-full text-left px-4 py-3 bg-white text-gray-800 font-semibold focus:outline-none toggle-btn">
+                    3. Can I get a refund for my canceled ticket?
+                </button>
+                <div class="p-4 hidden answer bg-white">
+                    Yes, refunds are processed based on the airline or hotel policies. If eligible, the refund amount will be credited to your original payment method within 5-7 business days.
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="border border-gray-300 rounded-lg">
+                <button class="w-full text-left px-4 py-3 bg-white text-gray-800 font-semibold focus:outline-none toggle-btn">
+                    4. How do I check my booking status?
+                </button>
+                <div class="p-4 hidden answer bg-white">
+                    You can check your booking status under the ‘My Bookings’ section by entering your booking reference number and email/phone number.
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="border border-gray-300 rounded-lg">
+                <button class="w-full text-left px-4 py-3 bg-white text-gray-800 font-semibold focus:outline-none toggle-btn">
+                    5. Are there any discounts available?
+                </button>
+                <div class="p-4 hidden answer bg-white">
+                    Yes, Goibibo offers various discounts on flights, hotels, and holiday packages. Check the ‘Deals & Offers’ section for the latest promotions.
+                </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="border border-gray-300 rounded-lg">
+                <button class="w-full text-left px-4 py-3 bg-white text-gray-800 font-semibold focus:outline-none toggle-btn">
+                    6. Can I reschedule my flight after booking?
+                </button>
+                <div class="p-4 hidden answer bg-white">
+                    Yes, you can reschedule your flight from the ‘Manage Bookings’ section. Additional charges may apply depending on the airline policy.
+                </div>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="border border-gray-300 rounded-lg">
+                <button class="w-full text-left px-4 py-3 bg-white text-gray-800 font-semibold focus:outline-none toggle-btn">
+                    7. How do I contact customer support?
+                </button>
+                <div class="p-4 hidden answer bg-white">
+                    You can contact Goibibo’s 24/7 customer support via phone, email, or live chat available on the website and mobile app.
+                </div>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="border border-gray-300 rounded-lg">
+                <button class="w-full text-left px-4 py-3 bg-white text-gray-800 font-semibold focus:outline-none toggle-btn">
+                    8. Is it safe to book through Goibibo?
+                </button>
+                <div class="p-4 hidden answer bg-white">
+                    Yes, Goibibo ensures secure transactions with encrypted payment gateways and verified travel partners.
+                </div>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="border border-gray-300 rounded-lg">
+                <button class="w-full text-left px-4 py-3 bg-white text-gray-800 font-semibold focus:outline-none toggle-btn">
+                    9. Can I book international flights on Goibibo?
+                </button>
+                <div class="p-4 hidden answer bg-white ">
+                    Yes, Goibibo allows you to book both domestic and international flights with competitive prices and easy cancellations.
+                </div>
+            </div>
+
+            <!-- Question 10 -->
+            <div class="border border-gray-300 rounded-lg">
+                <button class="w-full text-left px-4 py-3 bg-white text-gray-800 font-semibold focus:outline-none toggle-btn">
+                    10. Does Goibibo provide holiday packages?
+                </button>
+                <div class="p-4 hidden answer bg-white">
+                    Yes, Goibibo offers holiday packages for various domestic and international destinations, including flights, hotels, and sightseeing.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="py-8 m-10">
+    <div class="container mx-auto px-4">
+        <!-- Footer grid for sections -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Top Sectors -->
+            <div>
+                <h3 class="font-bold text-sm mb-4">OUR PRODUCTS</h3>
+                <ul class="space-y-2 text-sm text-gray-600">
+                    <li>Domestic Hotels</li>
+                    <li>International Hotels</li>
+                    <li>Domestic Flights</li>
+                    <li>International Flights</li>
+                    <li>Multi-City Flights</li>
+                    <li>Couple Friendly Hotels</li>
+                    <li>Nearby Getaways</li>
+                    <li>Bus Booking</li>
+                    <li>Cab Booking</li>
+                    <li>Airport Cabs Booking</li>
+                    <li>Outstation Cabs Booking</li>
+                    <li>Train Booking</li>
+                    <li>Go Stay</li>
+                    <li>Gift Cards</li>
+                    <li>Gift</li>
+                    <li>Trip Money</li>
+                    <li>Goibibo Advertising Solutions</li>
+                </ul>
+            </div>
+            <!-- Popular Airlines -->
+            <div>
+                <h3 class="font-bold text-sm mb-4">ABOUT US</h3>
+                <li><a href="about.html">About Us</a></li>
+                <li>Investor Relations</li>
+                <li><a href="mgmt.html">Management</a></li>
+                <li><a href="terms.html">Terms of Services</a></li>
+                <li>User Agreement</li>
+                    <li>Privacy</li>
+                    <li>Careers</li>
+                    <li>Youtube Channel</li>
+                    <li>Technology@GoibiboF</li>
+                    <li>Customer Support</li>
+                    <li>Facebook Page</li>
+                    <li>Twitter Handle</li>
+                </ul>
+            </div>
+            <!-- Customer Support -->
+            <div>
+                <h3 class="font-bold text-sm mb-4">TRAVEL ESSENTIALS</h3>
+                <ul class="space-y-2 text-sm text-gray-600">
+                    <li>PNR Status</li>
+                    <li>Offers</li>
+                    <li>Airline Routes</li>
+                    <li>Train Running Status</li>
+                </ul>
+            </div>
+            <!-- About Us -->
+            <div>
+                <h3 class="font-bold text-sm mb-4">MORE LINKS</h3>
+                <ul class="space-y-2 text-sm text-gray-600">
+                    <li>Cheap Flights</li>
+                    <li>Hotels Near Me</li>
+                    <li>My Bookings</li>
+                    <li>Cancellation</li>
+                    <li>My Account</li>
+                    <li>Wallet</li>
+                    <li>Advertise with Us</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <!-- Footer -->
+    <img src="images/footer.png" alt="footer">
+
+
+<!-- JavaScript for FAQ Toggle -->
+<script>
+    document.querySelectorAll('.toggle-btn').forEach(button => {
+        button.addEventListener('click', () => {
+            const answer = button.nextElementSibling;
+            answer.classList.toggle('hidden');
+        });
+    });
+</script>
+
+</body>
+</html>
